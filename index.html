@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2dd282355f.js" crossorigin="anonymous"></script>
+
+
+    <!-- ada 3 jenis css yaitu, inline, internal, dan external css. 
+        Yang ini adalah internal css.
+    <style>
+        .menu{
+            background: red;
+        } 
+
+        .list{
+            display: inline-block;
+            padding: 15px;
+        }
+
+        .list:hover{
+            background: #aa0000;
+        }
+
+        .menu .list a{
+            color: white ;
+        }
+
+        .menu .list a:hover{
+            text-decoration: none;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+    </style> 
+    -->
+
+</head>
+<body>
+    
+    <!-- <ul> untuk bulatan, <ol> untuk nomor-nomor > -->
+    <!-- ul, atau ol memiliki default margin dan paddingnya sendiri -->
+    <ul class="menu">
+        <div class="container">
+            <li class="list"><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li class="list"><a href="about.html"><i class="fa-solid fa-people-group"></i> About</a></li>
+            <li class="list"><a href="owner.html"><i class="fa-solid fa-user"></i> Owner</a></li>
+            <li class="list"><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
+            <li class="list"><a href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a></li>
+        </div>
+    </ul>
+
+    <div class="header">
+        <div class="container">
+            <h1 class="header-title">My First Website</h1>
+            <div class="header-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore quos est illum enim officiis incidunt aliquam inventore id sed? Corrupti minus temporibus recusandae ad eveniet accusamus nulla assumenda inventore nam?</div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="content">
+            <h1 class="card-title">Article Title</h1>
+            <img src="thumbnail.jpg" alt="img">
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, minus velit exercitationem quaerat unde sapiente ad quibusdam assumenda nobis beatae at enim magnam repellat dicta dolorum laborum animi voluptates veniam distinctio, atque eveniet quis aperiam! Doloremque deleniti quaerat neque minima, quas rem provident est voluptates quam sint aliquid eos ut non reiciendis. Eaque earum magni rem excepturi aliquid quo quam doloremque aperiam! Aspernatur id repellendus harum consequuntur asperiores fugit quaerat vitae facilis sequi autem, officiis unde modi necessitatibus voluptatibus eius distinctio aut sapiente nulla corrupti quasi, nobis explicabo quisquam porro magnam? Animi et, neque veniam harum a corporis quis aspernatur.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit id, veritatis hic cum atque adipisci possimus sequi perferendis nobis laborum quibusdam delectus nesciunt doloribus necessitatibus minus accusamus dolor voluptatum omnis autem? Praesentium commodi deleniti, animi pariatur sapiente atque voluptas provident, corrupti dolores sunt a quidem ea doloribus voluptatum maxime voluptatem distinctio odio. Amet molestiae accusantium explicabo accusamus commodi alias fuga temporibus, quibusdam magnam possimus? Alias fuga culpa ex. Officiis, nostrum numquam doloribus accusamus voluptas assumenda placeat repellat laboriosam similique eos.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sint neque accusamus non quod illo perspiciatis fugit aut. Pariatur, repudiandae! Neque illum doloribus ducimus mollitia et reprehenderit impedit fugit atque temporibus recusandae reiciendis, iste dicta quis quam placeat, sit quia suscipit non odit dignissimos ut ad laboriosam! Aperiam, eaque neque?</p>
+        </div> <!-- content-->
+        
+        <div class="sidebar">
+
+            <!-- untuk shortcut dibawah bisa sperti ini: ul>li*5>a kemudian enter. angka 5 bisa disesuaikan seberapa banyak yang dimau -->
+            <ul class="navbar-sidebar">
+                <li><a href="owner.html">Owner</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="https://twitter.com/?lang=en">Twitter</a></li>
+                <li><a href="https://www.facebook.com/">Facebook</a></li> 
+            </ul>
+
+            <h3 class="card-title">Login Page</h3>
+            <hr> <!-- untuk memberi  garis bawah  -->
+
+
+            <form action="action.html">
+
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" placeholder="username" id="username" class="form" required> <!-- required baru ada di html5, dan tidak semua browser support, pemakaiannya sangat direkomendasikan meski punya coding validasi sendiri-->
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="password" id="password" class="form" required>
+                </div>
+
+                <button type="submit" class="button">Login <i class="fa-solid fa-right-to-bracket"></i></button>
+            </form>
+
+        </div> <!--sidebar-->
+
+    </div> <!--container-->
+
+    <div class="footer">
+
+        <div class="container">
+            <h4>Designed & Built by Adi Perwira</h4>
+           <div>
+                &copy; Copyright by Adi Perwira
+           </div>
+        </div>
+
+    </div> <!--footer-->
+    
+    <!-- contoh penggunaan inline css -->
+    <!-- <a href="about.html" style="margin-left: 30px;">About Us</a> -->
+
+</body>
+</html>
